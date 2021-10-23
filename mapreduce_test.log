@@ -1,0 +1,124 @@
+DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginSuccess with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, about=, always=false, type=DEFAULT, value=[Rate of successful kerberos logins and latency (milliseconds)], valueName=Time)
+ DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginFailure with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, about=, always=false, type=DEFAULT, value=[Rate of failed kerberos logins and latency (milliseconds)], valueName=Time)
+ DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, about=, always=false, type=DEFAULT, value=[GetGroups], valueName=Time)
+ DEBUG main org.apache.hadoop.metrics2.impl.MetricsSystemImpl - UgiMetrics, User and group related metrics
+ DEBUG main org.apache.hadoop.security.authentication.util.KerberosName - Kerberos krb5 configuration not found, setting default realm to empty
+ DEBUG main org.apache.hadoop.security.Groups -  Creating new Groups object
+ DEBUG main org.apache.hadoop.util.NativeCodeLoader - Trying to load the custom-built native-hadoop library...
+ DEBUG main org.apache.hadoop.util.NativeCodeLoader - Loaded the native-hadoop library
+ DEBUG main org.apache.hadoop.security.JniBasedUnixGroupsMapping - Using JniBasedUnixGroupsMapping for Group resolution
+ DEBUG main org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback - Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMapping
+ DEBUG main org.apache.hadoop.security.Groups - Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback; cacheTimeout=300000; warningDeltaMs=5000
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - hadoop login
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - hadoop login commit
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - Using user: "root" with name root
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - User entry: "root"
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - UGI loginUser:root (auth:SIMPLE)
+ DEBUG main org.apache.hadoop.hdfs.BlockReaderLocal - dfs.client.use.legacy.blockreader.local = false
+ DEBUG main org.apache.hadoop.hdfs.BlockReaderLocal - dfs.client.read.shortcircuit = false
+ DEBUG main org.apache.hadoop.hdfs.BlockReaderLocal - dfs.client.domain.socket.data.traffic = false
+ DEBUG main org.apache.hadoop.hdfs.BlockReaderLocal - dfs.domain.socket.path = 
+ DEBUG main org.apache.hadoop.hdfs.DFSClient - No KeyProvider found.
+ DEBUG main org.apache.hadoop.io.retry.RetryUtils - multipleLinearRandomRetry = null
+ DEBUG main org.apache.hadoop.ipc.Server - rpcKind=RPC_PROTOCOL_BUFFER, rpcRequestWrapperClass=class org.apache.hadoop.ipc.ProtobufRpcEngine$RpcRequestWrapper, rpcInvoker=org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker@470f1802
+ DEBUG main org.apache.hadoop.ipc.Client - getting client out of cache: org.apache.hadoop.ipc.Client@636be97c
+ DEBUG main org.apache.hadoop.util.PerformanceAdvisory - Both short-circuit local reads and UNIX domain socket are disabled.
+ DEBUG main org.apache.hadoop.hdfs.protocol.datatransfer.sasl.DataTransferSaslUtil - DataTransferProtocol not using SaslPropertiesResolver, no QOP found in configuration for dfs.data.transfer.protection
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - PrivilegedAction as:root (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.connect(Job.java:1262)
+ DEBUG main org.apache.hadoop.mapreduce.Cluster - Trying ClientProtocolProvider : org.apache.hadoop.mapred.LocalClientProtocolProvider
+ INFO main org.apache.hadoop.conf.Configuration.deprecation - session.id is deprecated. Instead, use dfs.metrics.session-id
+ INFO main org.apache.hadoop.metrics.jvm.JvmMetrics - Initializing JVM Metrics with processName=JobTracker, sessionId=
+ DEBUG main org.apache.hadoop.mapreduce.Cluster - Picked org.apache.hadoop.mapred.LocalClientProtocolProvider as the ClientProtocolProvider
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - PrivilegedAction as:root (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Cluster.getFileSystem(Cluster.java:161)
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - PrivilegedAction as:root (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.submit(Job.java:1294)
+ DEBUG main org.apache.hadoop.ipc.Client - The ping interval is 60000 ms.
+ DEBUG main org.apache.hadoop.ipc.Client - Connecting to /192.168.43.100:9000
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 0 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 1 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 2 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 3 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 4 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 5 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 6 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 7 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 8 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 9 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 10 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 11 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 12 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 13 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 14 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 15 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 16 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 17 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 18 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 19 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 20 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 21 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 22 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 23 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 24 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 25 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 26 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 27 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 28 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 29 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 30 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 31 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 32 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 33 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 34 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 35 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 36 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 37 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 38 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 39 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 40 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 41 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 42 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 43 time(s); maxRetries=45
+ INFO main org.apache.hadoop.ipc.Client - Retrying connect to server: 192.168.43.100/192.168.43.100:9000. Already tried 44 time(s); maxRetries=45
+ DEBUG main org.apache.hadoop.ipc.Client - closing ipc connection to 192.168.43.100/192.168.43.100:9000: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=192.168.43.100/192.168.43.100:9000]
+ org.apache.hadoop.net.ConnectTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=192.168.43.100/192.168.43.100:9000]
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:533)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:494)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:608)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:706)
+	at org.apache.hadoop.ipc.Client$Connection.access$2800(Client.java:369)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1522)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1439)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1400)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:232)
+	at com.sun.proxy.$Proxy9.getFileInfo(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.getFileInfo(ClientNamenodeProtocolTranslatorPB.java:752)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:187)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy10.getFileInfo(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.getFileInfo(DFSClient.java:1977)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1118)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystem.exists(FileSystem.java:1400)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.checkOutputSpecs(FileOutputFormat.java:145)
+	at org.apache.hadoop.mapreduce.JobSubmitter.checkSpecs(JobSubmitter.java:267)
+	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:140)
+	at org.apache.hadoop.mapreduce.Job$10.run(Job.java:1297)
+	at org.apache.hadoop.mapreduce.Job$10.run(Job.java:1294)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1656)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1294)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1315)
+	at wordcount.main(wordcount.java:72)
+DEBUG main org.apache.hadoop.ipc.Client - IPC Client (26728049) connection to /192.168.43.100:9000 from root: closed
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - PrivilegedActionException as:root (auth:SIMPLE) cause:org.apache.hadoop.net.ConnectTimeoutException: Call From desktop666666/192.168.255.1 to 192.168.43.100:9000 failed on socket timeout exception: org.apache.hadoop.net.ConnectTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=192.168.43.100/192.168.43.100:9000]; For more details see:  http://wiki.apache.org/hadoop/SocketTimeout
+ DEBUG Thread-2 org.apache.hadoop.ipc.Client - stopping client from cache: org.apache.hadoop.ipc.Client@636be97c
+ DEBUG Thread-2 org.apache.hadoop.ipc.Client - removing client from cache: org.apache.hadoop.ipc.Client@636be97c
+ DEBUG Thread-2 org.apache.hadoop.ipc.Client - stopping actual client because no more references remain: org.apache.hadoop.ipc.Client@636be97c
+ DEBUG Thread-2 org.apache.hadoop.ipc.Client - Stopping client
+ 
