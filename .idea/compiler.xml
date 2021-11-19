@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="wordcount" />
+        <module name="Using-knn-algorithm-to-predict-the-gender-of-movie-website-users" />
       </profile>
     </annotationProcessing>
   </component>
